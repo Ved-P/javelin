@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/Ved-P/javelin">
-    <img src="images/javelin-logo.png" alt="Logo" width="135" height="120">
+    <img src="images/javelin-logo.png" alt="Logo" width="135" height="100">
   </a>
 
   <h3 align="center">Javelin</h3>
@@ -30,17 +30,14 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a> <!--
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul> -->
+      <a href="#about-the-project">About The Project</a>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a> <!--
+      <a href="#getting-started">Getting Started</a>
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-      </ul> -->
+      </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
@@ -59,54 +56,42 @@ Javelin (Java Language Interpreter) is an interpreter for coders to program in J
 
 Javelin is a running project, and more features like OOP and block coding will be developed very soon. Javelin also appreciates contributions from users in the open-source community on GitHub. If you would like to contribute, checkout the contribution guidelines!
 
-<!--
-### Built With
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
-* [Laravel](https://laravel.com)
--->
-
 ## Getting Started
-This section will be added once the project gets going!
-<!--
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+
+Are you interested in using Javelin? The installation process is quick and easy! Just follow the prerequisites and installation procedures that follow.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+To run Javelin, you will need to have a JRE (Java Runtime Environment) installed on your computer. A JRE can be installed through [Oracle](https://www.oracle.com/java/technologies/javase-jre8-downloads.html).
+
+**Note:** If you would also like to code with Java using Java files, a JRE is not sufficient for your needs. You need to download a Java Development Kit (JDK), which can also be downloaded through Oracle.
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. Download `Javelin.jar` from [GitHub](https://github.com/Ved-P/javelin/blob/main/Javelin.jar).
+2. Open a terminal window, such as Command Prompt for windows.
+3. Navigate to the directory where you downloaded 'Javelin.jar'. In Command Prompt:
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   cd C:\MyDirectory
    ```
-3. Install NPM packages
+4. Execute the jar file using the following command:
    ```sh
-   npm install
+   java -jar Javelin.jar
    ```
-4. Enter your API in `config.js`
-   ```JS
-   const API_KEY = 'ENTER YOUR API';
-   ```
--->
+
 ## Usage
+
 This section will be added once the project gets going!
 <!-- Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
 
 _For more examples, please refer to the [Documentation](https://example.com)_ -->
 
 ## Roadmap
+
 See the [open issues](https://github.com/Ved-P/javelin/issues) for a list of proposed features (and known issues).
 
 ## Contributing
+
 Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
@@ -116,14 +101,17 @@ Contributions are what make the open source community such an amazing place to l
 5. Open a Pull Request
 
 ## License
+
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
+
 Ved Pradhan - vedprad1@gmail.com
 
 Project Link: [https://github.com/Ved-P/javelin](https://github.com/Ved-P/javelin)
 
 ## Acknowledgements
+
 * [Img Shields](https://shields.io)
 
 [contributors-shield]: https://img.shields.io/github/contributors/Ved-P/javelin.svg?style=for-the-badge
