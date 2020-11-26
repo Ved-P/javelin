@@ -9,7 +9,12 @@
  *  @since  November 25, 2020
  */
 
+import java.util.Scanner;
+
 public class Javelin {
+
+  private Scanner in;
+  private Interpreter interpreter;
 
   /**
    *  Initializes field variables to help construct an instance of the class.
@@ -17,7 +22,8 @@ public class Javelin {
    *  There are no parameters or return statements.
    */
   public Javelin() {
-
+    in = new Scanner(System.in);
+    interpreter = new Interpreter();
   }
 
   /**
@@ -38,6 +44,20 @@ public class Javelin {
    *  There are no parameters and return statements.
    */
   public void launch() {
+    Logistics.start();
+    String input = "";
 
+    while (true) {
+      System.out.print(" --> ");
+      input = in.nextLine();
+      System.out.print(" ---> ");
+
+      if (input.equals("help"))
+        Logistics.help();
+      else if (input.equals("quit"))
+        Logistics.quit();
+
+      System.out.println("\n");
+    }
   }
 }
