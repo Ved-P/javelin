@@ -52,10 +52,8 @@ public class Javelin {
       input = in.nextLine();
       System.out.print(" ---> ");
 
-      if (input.equals("help"))
-        Logistics.help();
-      else if (input.equals("quit"))
-        Logistics.quit();
+      if (Logistics.isCommand(input))
+        Logistics.runCommand(input);
 
       System.out.println("\n");
     }
