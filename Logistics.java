@@ -13,7 +13,7 @@ import java.util.HashMap;
 
 public class Logistics {
 
-  public static final String documentation = "https://github.com/Ved-P/javelin";
+  public static final String documentation = "https://github.com/Ved-P/javelin/wiki";
   public static final String sourceCode = "https://github.com/Ved-P/javelin";
   public static final HashMap<String, String> commands = new HashMap<String, String>() {{
     put("help", "Opens the help menu.");

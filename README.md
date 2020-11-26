@@ -15,7 +15,7 @@
   <p align="center">
     An interpreter for Java, allowing coders to code on the spot without having to learn a new language.
     <br />
-    <a href="https://github.com/Ved-P/javelin"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Ved-P/javelin/wiki"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://github.com/Ved-P/javelin">View Demo</a>
