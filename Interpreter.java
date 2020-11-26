@@ -20,4 +20,15 @@ public class Interpreter {
 
   }
 
+  /**
+   *  Takes in a line of code and uses other classes to interpret the line of
+   *  code.
+   *
+   *  @param code The line of code inputted by the user.
+   *  @return The output to be printed to the terminal window.
+   */
+  public String interpret(String code) {
+    return "Code receieved.";
+  }
+
 }

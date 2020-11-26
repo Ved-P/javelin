@@ -54,6 +54,8 @@ public class Javelin {
 
       if (Logistics.isCommand(input))
         Logistics.runCommand(input);
+      else
+        System.out.print( interpreter.interpret( input ) );
 
       System.out.println("\n");
     }
