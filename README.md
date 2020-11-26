@@ -2,12 +2,12 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+[![MIT License][license-shield-2]][license-url]
 
 <br />
 <p align="center">
   <a href="https://github.com/Ved-P/javelin">
-    <img src="images/javelin-logo.png" alt="Logo" width="135" height="180">
+    <img src="images/javelin-logo.png" alt="Logo" width="135" height="120">
   </a>
 
   <h3 align="center">Javelin</h3>
@@ -134,6 +134,6 @@ Project Link: [https://github.com/Ved-P/javelin](https://github.com/Ved-P/javeli
 [stars-url]: https://github.com/Ved-P/javelin/stargazers
 [issues-shield]: https://img.shields.io/github/issues/Ved-P/javelin.svg?style=for-the-badge
 [issues-url]: https://github.com/Ved-P/javelin/issues
-[license-shield]: https://img.shields.io/github/license/Ved-P/javelin.svg?style=for-the-badge
+[license-shield-2]: https://img.shields.io/github/license/Ved-P/javelin.svg?style=for-the-badge
 [license-url]: https://github.com/Ved-P/javelin/blob/main/LICENSE
 <!-- [product-screenshot]: images/javelin-logo.png -->
