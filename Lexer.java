@@ -45,7 +45,7 @@ public class Lexer {
    *
    *  @return An ArrayList containing the tokens.
    */
-  public makeTokens() {
+  public ArrayList<Token> makeTokens() {
     ArrayList<Token> tokens = new ArrayList<Token>();
     while (pos < code.length()) {
       switch (current) {
@@ -69,7 +69,7 @@ public class Lexer {
           advance();
           break;
         default:
-          if (current.isDigit())
+          if (Character.isDigit(current))
             tokens.add( makeNum() );
           else
             advance();
@@ -88,11 +88,12 @@ public class Lexer {
     String num = new String("");
     int dotCount = 0;
     Token res;
-    while (pos < code.length() && (current.isDigit() || current == '.')) {
+    while (pos < code.length() && (Character.isDigit(current) || current == '.')) {
       if (current == '.') {
         if (dotCount == 1)
           break;
         dotCount++;
+        num += current;
       }
       else
         num += current;
