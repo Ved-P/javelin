@@ -18,6 +18,11 @@ public class Token {
   public static final String TIMES = "TIMES";
   public static final String DIV  = "DIV";
   public static final String DOT  = "DOT";
+  public static final String SEMI  = "SEMI";
+  public static final String RESERV  = "RESERV";
+  public static final String IDENT  = "IDENT";
+  public static final String LPAREN  = "LPAREN";
+  public static final String RPAREN  = "RPAREN";
 
   // Instance-specific field variables.
   private String type;

@@ -64,6 +64,18 @@ public class Lexer {
           tokens.add( new Token(Token.DIV) );
           advance();
           break;
+        case ';':
+          tokens.add( new Token(Token.SEMI) );
+          advance();
+          break;
+        case '(':
+          tokens.add( new Token(Token.LPAREN) );
+          advance();
+          break;
+        case ')':
+          tokens.add( new Token(Token.RPAREN) );
+          advance();
+          break;
         case '-': case '.':
           tokens.add( makeNum() );
           break;
