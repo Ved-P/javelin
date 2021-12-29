@@ -56,10 +56,6 @@ public class Lexer {
           tokens.add( new Token(Token.PLUS) );
           advance();
           break;
-        case '-':
-          tokens.add( new Token(Token.MINUS) );
-          advance();
-          break;
         case '*':
           tokens.add( new Token(Token.TIMES) );
           advance();
@@ -67,6 +63,9 @@ public class Lexer {
         case '/':
           tokens.add( new Token(Token.DIV) );
           advance();
+          break;
+        case '-': case '.':
+          tokens.add( makeNum() );
           break;
         default:
           if (Character.isDigit(current))
@@ -88,6 +87,10 @@ public class Lexer {
     String num = new String("");
     int dotCount = 0;
     Token res;
+    if (current == '-') {
+      num += current;
+      advance();
+    }
     while (pos < code.length() && (Character.isDigit(current) || current == '.')) {
       if (current == '.') {
         if (dotCount == 1)
@@ -99,6 +102,10 @@ public class Lexer {
         num += current;
       advance();
     }
+    if (num.equals("-"))
+      return new Token(Token.MINUS);
+    if (num.equals("."))
+      return new Token(Token.DOT);
     if (dotCount == 0)
       return new Token(Token.INT, num);
     return new Token(Token.DOUBLE, num);

@@ -17,6 +17,7 @@ public class Token {
   public static final String MINUS = "MINUS";
   public static final String TIMES = "TIMES";
   public static final String DIV  = "DIV";
+  public static final String DOT  = "DOT";
 
   // Instance-specific field variables.
   private String type;
