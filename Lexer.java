@@ -76,12 +76,21 @@ public class Lexer {
           tokens.add( new Token(Token.RPAREN) );
           advance();
           break;
+        case '=':
+          tokens.add( new Token(Token.ASSIGN) );
+          advance();
+          break;
         case '-': case '.':
           tokens.add( makeNum() );
           break;
+        case '$': case '_':
+          tokens.add( makeWord() );
+          break;
         default:
-          if (Character.isDigit(current))
+          if ( Character.isDigit(current) )
             tokens.add( makeNum() );
+          else if ( Character.isLetter(current) )
+            tokens.add( makeWord() );
           else
             advance();
       }
@@ -103,7 +112,8 @@ public class Lexer {
       num += current;
       advance();
     }
-    while (pos < code.length() && (Character.isDigit(current) || current == '.')) {
+    while (pos < code.length() && (Character.isDigit(current) ||
+      current == '.')) {
       if (current == '.') {
         if (dotCount == 1)
           break;
@@ -121,6 +131,28 @@ public class Lexer {
     if (dotCount == 0)
       return new Token(Token.INT, num);
     return new Token(Token.DOUBLE, num);
+  }
+
+  /**
+   *  Creates a RESERV or IDENT token given that the next few characters will be
+   *  letters, dollarsigns, underscores, or numbers.
+   *
+   *  @return The token to be added to the ArrayList.
+   */
+  public Token makeWord() {
+    String word = new String("");
+    Token res;
+    word += current;
+    advance();
+    while (pos < code.length() && (Character.isLetter(current) ||
+      Character.isDigit(current) || current == '$' || current == '_')) {
+      word += current;
+      advance();
+    }
+    for (String keyword : Token.reserved)
+      if (keyword.equals(word))
+        return new Token(Token.RESERV, word);
+    return new Token(Token.IDENT, word);
   }
 
 }

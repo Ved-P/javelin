@@ -19,10 +19,21 @@ public class Token {
   public static final String DIV  = "DIV";
   public static final String DOT  = "DOT";
   public static final String SEMI  = "SEMI";
-  public static final String RESERV  = "RESERV";
-  public static final String IDENT  = "IDENT";
+  public static final String ASSIGN  = "ASSIGN";
   public static final String LPAREN  = "LPAREN";
   public static final String RPAREN  = "RPAREN";
+  public static final String RESERV  = "RESERV";
+  public static final String IDENT  = "IDENT";
+
+  // Reserved keywords.
+  public static final String[] reserved = new String[]{"abstract", "assert",
+    "boolean", "break", "byte", "case", "catch", "char", "class", "const",
+    "continue", "default", "double", "do", "else", "enum", "extends", "false",
+    "final", "finally", "float", "for", "goto", "if", "implements", "import",
+    "instanceof", "int", "interface", "long", "native", "new", "null",
+    "package", "private", "protected", "public", "return", "short", "static",
+    "strictfp", "super", "switch", "synchronized", "this", "throw", "throws",
+    "transient", "true", "try", "void", "volatile",	"while"};
 
   // Instance-specific field variables.
   private String type;
